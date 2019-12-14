@@ -90,7 +90,7 @@ function checker()
 	
 	if(document.getElementById('localgari').value == "" || document.getElementById('jvara').value == "" )
 	{
-		alert("এরে মাদারছদ value বসা ");
+		alert("এরে মাদারছদ value বসা গাড়ি ভাড়া  ");
 		
 	}
 	else{persom();}
