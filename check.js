@@ -2,13 +2,20 @@
 
 function garicheck()
 {
-	if ( document.getElementById('gari').value == 'chaad' )
+	if ( document.getElementById('gari').value == 'chaad' && document.getElementById('numberofdays').value == 1 )
 	{
-		document.getElementById("localgari").value = 8000;
+		document.getElementById("localgari").value = 6600;
 		document.getElementById("localgari").disabled = true;
 			document.getElementById('asas').innerHTML = "-------------";
 	}
-	else{
+	else if ( document.getElementById('gari').value == 'chaad' && document.getElementById('numberofdays').value == 2 )
+	{
+		document.getElementById("localgari").value = 8600;
+		document.getElementById("localgari").disabled = true;
+			document.getElementById('asas').innerHTML = "-------------";
+	}
+
+else{
 		document.getElementById("localgari").disabled = false;
 		document.getElementById('asas').innerHTML = "যদি লোকাল তাহলে নাম্বার প্রবেশ করুন :";
 		document.getElementById("localgari").value = '';
@@ -45,10 +52,20 @@ function roomroom()
 			var c = document.getElementById('numberofroom').value;
 				var d = document.getElementById('numberofdays').value;
 				//var d = document.getElementById('nop').value;
+				
+				
+				if( a <= 10)
+				{var l =  b * c * d;
+					var n = l / a;
+						var k =Math.round(n);}
+						
+						else { var l =  b * c * d;
+								var n = l / 10;
+									var k =Math.round(n);}
 	
-	var l =  b * c * d;
+	/* var l =  b * c * d;
 	var n = l / a;
-	var k =Math.round(n);
+	var k =Math.round(n); */
 
 	document.getElementById('roomkhoroch').innerHTML = k;
 			
