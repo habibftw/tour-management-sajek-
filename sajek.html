@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 <center>
 <h2>SADEK MANAGER</h2>
@@ -19,15 +20,8 @@
 			
 			<tr>
 				<td>
-						<select name="person" id="nop">
+						<input name="person" type='number' id="nop">
 							
-							<option value="2">2</option>
-							<option value="4">4</option>
-							<option value="6">6</option>
-							<option value="8">8</option>
-							<option value="10">10</option>
-							<option value="12">12</option>
-						</select>
 					</td>
 			</tr>
 			
@@ -62,14 +56,7 @@
 			</tr>	
 			<tr>
 				<td>
-						<select name="khawa" id="khawa" onchange="garicheck()">
-							
-							<option value="500">500</option>
-							<option value="1000">1000</option>
-							<option value="1500">1500</option>
-							
-							
-						</select>
+						<input name="khawa" type='number' id="khawa" onchange="">
 					</td>
 			</tr>
 			
@@ -147,25 +134,13 @@
 				
 				<tr>
 				<td>
-						<select name="room" id="room" onchange="">
-							
-							<option value="1000">1000</option>
-							<option value="1500">1500</option>
-							<option value="2000">2000</option>
-							<option value="2500">2500</option>
-							<option value="3000">3000</option>
-							<option value="3500">3500</option>
-							<option value="4000">4000</option>
-							<option value="4500">4500</option>
-							
-							
-						</select>
+						<input name="" type='number' id="room" >
 					</td>
 			</tr>
 			
 				
 				<tr>
-					<td>রুমের নাম্বার :  </td>
+					<td>রুম কয়টা  :  </td>
 				
 				</tr>
 				
@@ -178,6 +153,25 @@
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+						
+							
+							
+						</select>
+					</td>
+			</tr>
+			
+			<tr>
+					<td>কয় দিন :  </td>
+				
+				</tr>
+				
+				<tr>
+				<td>
+						<select name=""  id="numberofdays" onchange="">
+							
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
 						
 							
 							
@@ -200,7 +194,7 @@
 				<td >অতিরিক্ত ভাড়া (optional):</td>
 			</tr>	
 			<tr>
-			<td><input name="number" type="number" id="xxtra"  onkeypress=""></td>
+			<td><input name="" type="number" id="xxtra"  onkeypress=""></td>
 			</tr>
 			
 			
@@ -211,7 +205,7 @@
 		</center>
 		<hr/>
 		<input type="button" value="Submit" onclick="checker()">
-		<input type="reset">
+		
 	</form>
 </fieldset>
 
